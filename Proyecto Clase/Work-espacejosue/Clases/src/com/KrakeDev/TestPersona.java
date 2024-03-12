@@ -6,6 +6,13 @@ public class TestPersona {
 		// TODO Auto-generated method stub
 		Persona p; //1. Declaro una variable llamada p de tipo persona
 		Persona p2 = new Persona();
+		Persona p3 = new Persona("Pablo");
+		Persona p4 = new Persona("Rocio",43,1.60);
+		System.out.println("nombre:"+p4.getNombre());
+		System.out.println("edad:"+p4.getEdad());
+		System.out.println("estatura:"+p4.getEstatura());
+		System.out.println("nombre:"+p3.getNombre());
+		
 		p=new Persona();// 2. Insatarciar un objeto Persona, referenciarlo con p
 		//3. Accedo a los atributos
 		System.out.println("nombre:"+p.getNombre());
