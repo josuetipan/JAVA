@@ -3,7 +3,6 @@ package com.krakedev.persistencia.test;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import com.krakedev.persistencia.entidades.Compras;
 import com.krakedev.persistencia.entidades.Persona;
 import com.krakedev.persistencia.entidades.Registro;
 import com.krakedev.persistencia.entidades.Transacciones;
@@ -16,8 +15,7 @@ public class TestActualizar {
 
 	public static void main(String[] args) {
 		
-		Compras com = new Compras(1541,"1725156622",12.30);
-		Persona personaActulizada=new Persona(com,"Tatiana","My love");
+		Persona personaActulizada=new Persona("1725156622","Tatiana","My love");
 		try {
 			AdminPersonas.actualizar(personaActulizada);
 		} catch (Exception e) {

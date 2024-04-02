@@ -3,7 +3,6 @@ package com.krakedev.persistencia.test;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import com.krakedev.persistencia.entidades.Compras;
 import com.krakedev.persistencia.entidades.Persona;
 import com.krakedev.persistencia.entidades.Registro;
 import com.krakedev.persistencia.entidades.Transacciones;
@@ -15,9 +14,9 @@ import com.krakedev.persistencia.utils.Convertidor;
 public class TestAdminPersona {
 
 	public static void main(String[] args) {
-		Compras com = new Compras(1541,"1725156622",12.30);
+		
 		try {
-			AdminPersonas.insertar(new Persona(com,"Tatiana","Vazques"));
+			AdminPersonas.insertar(new Persona("1725156622","Tatiana","Vazques"));
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

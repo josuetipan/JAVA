@@ -9,6 +9,10 @@ public class Compras {
 		private Date fecha_compra;
 		private double monto;
 		
+		
+		public Compras() {
+			super();
+		}
 		public Compras(int id_compra, String cedula, double monto) {
 			super();
 			this.id_compra = id_compra;

@@ -8,6 +8,10 @@ public class Registro {
 	private Date fecha;
 	private Date hora;
 	
+	public Registro() {
+		
+	}
+	
 	public Registro(int codigo_registro, String cedula_empleado) {
 		super();
 		this.codigo_registro = codigo_registro;
@@ -46,6 +50,13 @@ public class Registro {
 	public void setHora(Date hora) {
 		this.hora = hora;
 	}
+
+	@Override
+	public String toString() {
+		return "Registro [codigo_registro=" + codigo_registro + ", cedula_empleado=" + cedula_empleado + ", fecha="
+				+ fecha + ", hora=" + hora + "]";
+	}
+	
 	
 	
 	

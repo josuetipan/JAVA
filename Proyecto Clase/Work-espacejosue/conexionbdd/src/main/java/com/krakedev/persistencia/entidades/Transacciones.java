@@ -61,6 +61,12 @@ public class Transacciones {
 	public void setHora(Date hora) {
 		this.hora = hora;
 	}
+
+	@Override
+	public String toString() {
+		return "Transacciones [codigo=" + codigo + ", numero_cuenta=" + numero_cuenta + ", monto=" + monto + ", tipo="
+				+ tipo + ", fecha=" + fecha + ", hora=" + hora + "]";
+	}
 	
 	
 	
