@@ -1,0 +1,13 @@
+package com.KrakeDev;
+/*Hola soy un mensaje*/
+public class TestPersona {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Persona p; //1. Declaro una variable llamada p de tipo persona
+		p=new Persona();// 2. Insatarciar un objeto Persona, referenciarlo con p
+		System.out.println("Hola mundo");
+		
+	}
+
+}
